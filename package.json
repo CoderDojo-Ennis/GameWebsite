@@ -1,0 +1,5 @@
+{
+  "name": "game-website-root",
+  "private": true,
+  "packageManager": "pnpm@10.17.1"
+}
