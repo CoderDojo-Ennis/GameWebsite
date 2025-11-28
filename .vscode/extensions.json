@@ -1,0 +1,10 @@
+{
+	"recommendations": [
+		"nuxtr.nuxt-vscode-extentions",
+		"vue.volar",
+		"esbenp.prettier-vscode",
+		"ritwickdey.liveserver",
+		"geequlim.godot-tools",
+		"bruno-api-client.bruno"
+	]
+}

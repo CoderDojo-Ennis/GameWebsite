@@ -1,8 +1,12 @@
 {
-  "name": "game-website-root",
-  "private": true,
-  "packageManager": "pnpm@10.17.1",
-  "scripts": {
-    "dev": "pnpm -r dev"
-  }
+	"name": "game-website-root",
+	"private": true,
+	"packageManager": "pnpm@10.17.1",
+	"scripts": {
+		"dev": "pnpm -r dev",
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"prettier": "^3.7.2"
+	}
 }

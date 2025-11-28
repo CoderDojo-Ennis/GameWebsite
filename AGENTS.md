@@ -4,7 +4,7 @@
 
 - **Framework**: Nuxt 4
 - **UI Library**: Vue 3
-- **Styling**: 
+- **Styling**:
   - Custom CSS
   - CSS Variables for theming (Neon style)
   - Font: 'Orbitron' from Google Fonts
