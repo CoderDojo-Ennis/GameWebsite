@@ -5,6 +5,7 @@
 		"esbenp.prettier-vscode",
 		"ritwickdey.liveserver",
 		"geequlim.godot-tools",
-		"bruno-api-client.bruno"
+		"bruno-api-client.bruno",
+		"streetsidesoftware.code-spell-checker"
 	]
 }

@@ -1,7 +1,7 @@
 <script setup lang="ts">
-definePageMeta({
-	layout: "game"
-});
+	definePageMeta({
+		layout: "game",
+	});
 </script>
 
 <template>
@@ -21,7 +21,7 @@ definePageMeta({
 </template>
 
 <style scoped>
-.page-container {
-	--theme-color: #0ff;
-}
+	.page-container {
+		--theme-color: #0ff;
+	}
 </style>

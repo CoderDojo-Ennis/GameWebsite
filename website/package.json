@@ -1,18 +1,27 @@
 {
-	"name": "website",
+	"name": "games-website",
 	"type": "module",
-	"packageManager": "pnpm@10.17.1",
 	"private": true,
 	"scripts": {
 		"build": "nuxt build",
 		"dev": "nuxt dev",
 		"generate": "nuxt generate",
 		"preview": "nuxt preview",
-		"postinstall": "nuxt prepare"
+		"postinstall": "nuxt prepare",
+		"supabase-types": "dotenv -- supabase gen types typescript > shared/types/supabase.ts"
 	},
 	"dependencies": {
+		"@nuxtjs/supabase": "2.0.1",
+		"@supabase/supabase-js": "2.86.0",
+		"@tanstack/vue-query": "5.92.0",
+		"@vueuse/core": "14.1.0",
+		"@vueuse/nuxt": "14.1.0",
 		"nuxt": "^4.2.1",
 		"vue": "^3.5.25",
-		"vue-router": "^4.6.3"
+		"vue-router": "^4.6.3",
+		"zod": "^4.1.13"
+	},
+	"devDependencies": {
+		"dotenv-cli": "^11.0.0"
 	}
 }

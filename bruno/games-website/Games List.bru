@@ -1,0 +1,15 @@
+meta {
+  name: Games List
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{domain}}/api/games/list?include_deleted=false
+  body: none
+  auth: none
+}
+
+params:query {
+  include_deleted: false
+}
