@@ -5,8 +5,8 @@
 </script>
 
 <template>
-	<div class="page-container container">
-		<h1 class="title">Geeky Monkey Games</h1>
+	<div class="page-container container rainbow-bg">
+		<h1 class="title">Geeky Monkey Games !!</h1>
 		<div class="cards">
 			<NuxtLink to="/games/space-invaders" class="card neon-blue">
 				<img
@@ -58,7 +58,7 @@
 	}
 
 	.card {
-		background: rgba(255, 255, 255, 0.05);
+		background: black;
 		border: 2px solid #fff;
 		border-radius: 15px;
 		padding: 2rem;
@@ -109,6 +109,33 @@
 			0 0 20px #f0f,
 			inset 0 0 20px #f0f;
 		transform: scale(1.05);
+	}
+
+	.rainbow-bg {
+		background: linear-gradient(
+			45deg,
+			#ff0000,
+			#ff7f00,
+			#ffff00,
+			#00ff00,
+			#0000ff,
+			#4b0082,
+			#9400d3
+		);
+		background-size: 400% 400%;
+		animation: rainbow 10s ease infinite;
+	}
+
+	@keyframes rainbow {
+		0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+		}
 	}
 
 	@keyframes flicker {

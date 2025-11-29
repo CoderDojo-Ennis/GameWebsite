@@ -45,6 +45,7 @@
 	},
 	"peacock.color": "#1857a4",
 	"workbench.editor.customLabels.patterns": {
-		"**/index.vue": "Page: ${dirname}"
+		"**/index.vue": "Page: ${dirname}",
+		"**/pages/index.vue": "Home Page"
 	}
 }
