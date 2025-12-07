@@ -32,6 +32,7 @@ export default function baseDbTableStore<T extends BaseModel>({
 		error,
 	} = useQuery<T[]>({
 		queryKey: [tableName],
+		staleTime: 1000 * 60 * 5, // 5 minutes
 		queryFn: async ({ signal }) => {
 			console.log(`[${tableName}Store] Fetching ${tableName}`);
 			const includeDeleted: boolean = false;

@@ -19,18 +19,21 @@ export type Database = {
           created_at: string
           id: string
           slug: string | null
+          "theme-color": string | null
           title: string
         }
         Insert: {
           created_at?: string
           id?: string
           slug?: string | null
+          "theme-color"?: string | null
           title: string
         }
         Update: {
           created_at?: string
           id?: string
           slug?: string | null
+          "theme-color"?: string | null
           title?: string
         }
         Relationships: []

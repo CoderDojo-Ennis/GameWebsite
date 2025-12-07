@@ -7,7 +7,7 @@ export class SupabaseService {
 	static GetSupabaseEnv() {
 		const config = useRuntimeConfig();
 
-		const supabaseProjectId = config.supabaseProjectId;
+		const supabaseProjectId = config.public.supabaseProjectId;
 		if (!supabaseProjectId) {
 			throw new Error(
 				"Missing SUPABASE_PROJECT_ID environment variables",
@@ -15,7 +15,7 @@ export class SupabaseService {
 		}
 		const supabaseUrl = `https://${supabaseProjectId}.supabase.co`;
 
-		const supabaseKey = config.supabaseKey;
+		const supabaseKey = config.public.supabaseKey;
 		if (!supabaseKey) {
 			throw new Error("Missing SUPABASE_KEY environment variables");
 		}

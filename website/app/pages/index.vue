@@ -114,13 +114,13 @@
 	.rainbow-bg {
 		background: linear-gradient(
 			45deg,
-			#ff0000,
-			#ff7f00,
-			#ffff00,
-			#00ff00,
-			#0000ff,
-			#4b0082,
-			#9400d3
+			#ff000020,
+			#ff7f0020,
+			#ffff0020,
+			#00ff0020,
+			#0000ff20,
+			#4b008220,
+			#9400d320
 		);
 		background-size: 400% 400%;
 		animation: rainbow 10s ease infinite;

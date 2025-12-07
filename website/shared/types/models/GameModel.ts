@@ -9,6 +9,7 @@ export const GameModelSchema = z.strictObject({
 	title: z.string(),
 	createdAt: z.string(),
 	slug: z.string(),
+	themeColor: z.string(),
 });
 
 export type GameModel = z.infer<typeof GameModelSchema>;
@@ -38,5 +39,6 @@ export function gamesToRecords(models: GameModel[]): GameInsert[] {
 		title: m.title,
 		created_at: m.createdAt,
 		slug: m.slug,
+		"theme-color": m.themeColor,
 	}));
 }

@@ -19,13 +19,15 @@ export default defineNuxtConfig({
 		preset: "netlify",
 	},
 	runtimeConfig: {
-		supabaseProjectId: process.env.SUPABASE_PROJECT_ID,
-		supabaseKey: process.env.SUPABASE_KEY,
 		supabaseServiceKey: process.env.SUPABASE_SERVICE_KEY,
+		public: {
+			supabaseProjectId: process.env.SUPABASE_PROJECT_ID,
+			supabaseKey: process.env.SUPABASE_KEY,
+		},
 	},
-	build: {
-		transpile: ["@supabase/supabase-js"],
-	},
+	// build: {
+	// 	transpile: ["@supabase/supabase-js"],
+	// },
 
 	// supabase: {
 	// 	redirect: false,
